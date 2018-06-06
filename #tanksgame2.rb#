@@ -30,10 +30,10 @@ def intro_animation()
     system("clear")
     pad = pad.chomp("  ")
     pad2[i] = "  "
-    tank1 = pad2 + "â–‘â–‘â–‘â–‘â–‘â–‘â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ ]â–„â–„â–„â–„â–„â–„â–„â–„â–ƒ".red + pad + "                 â–ƒâ–„â–„â–„â–„â–„â–„â–„â–„[ â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‘â–‘â–‘â–‘â–‘â–‘".blue
-    tank2 = pad2 + "â–‚â–„â–…â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–…â–„â–ƒâ–‚                    ".red + pad + "            â–‚â–ƒâ–„â–…â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–…â–„â–‚".blue
-    tank3 = pad2 + "Iâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ].                  ".red + pad + "     .[â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆI".blue
-    tank4 = pad2 + "  â—¥âŠ™â–²âŠ™â–²âŠ™â–²âŠ™â–²âŠ™â–²âŠ™â–²âŠ™â—¤...          ".red + pad + "                ...â—¥âŠ™â–²âŠ™â–²âŠ™â–²âŠ™â–²âŠ™â–²âŠ™â–²âŠ™â—¤".blue
+    tank1 = pad2 + "œò¡Ñœò¡Ñœò¡Ñœò¡Ñœò¡Ñœò¡Ñœò¡Èœò¡Èœò¡Èœò¡Èœò¡Èœò¡Èœò¡È ]œò¡Äœò¡Äœò¡Äœò¡Äœò¡Äœò¡Äœò¡Äœò¡Äœò¡Ã".red + pad + "                 œò¡Ãœò¡Äœò¡Äœò¡Äœò¡Äœò¡Äœò¡Äœò¡Äœò¡Ä[ œò¡Èœò¡Èœò¡Èœò¡Èœò¡Èœò¡Èœò¡Èœò¡Ñœò¡Ñœò¡Ñœò¡Ñœò¡Ñœò¡Ñ".blue
+    tank2 = pad2 + "œò¡Âœò¡Äœò¡Åœò¡Èœò¡Èœò¡Èœò¡Èœò¡Èœò¡Èœò¡Èœò¡Èœò¡Èœò¡Åœò¡Äœò¡Ãœò¡Â                    ".red + pad + "            œò¡Âœò¡Ãœò¡Äœò¡Åœò¡Èœò¡Èœò¡Èœò¡Èœò¡Èœò¡Èœò¡Èœò¡Èœò¡Èœò¡Åœò¡Äœò¡Â".blue
+    tank3 = pad2 + "Iœò¡Èœò¡Èœò¡Èœò¡Èœò¡Èœò¡Èœò¡Èœò¡Èœò¡Èœò¡Èœò¡Èœò¡Èœò¡Èœò¡Èœò¡Èœò¡Èœò¡Èœò¡Èœò¡È].                  ".red + pad + "     .[œò¡Èœò¡Èœò¡Èœò¡Èœò¡Èœò¡Èœò¡Èœò¡Èœò¡Èœò¡Èœò¡Èœò¡Èœò¡Èœò¡Èœò¡Èœò¡Èœò¡Èœò¡Èœò¡ÈI".blue
+    tank4 = pad2 + "  œò¢ÅœôùÙœò¡òœôùÙœò¡òœôùÙœò¡òœôùÙœò¡òœôùÙœò¡òœôùÙœò¡òœôùÙœò¢Ä...          ".red + pad + "                ...œò¢ÅœôùÙœò¡òœôùÙœò¡òœôùÙœò¡òœôùÙœò¡òœôùÙœò¡òœôùÙœò¡òœôùÙœò¢Ä".blue
     puts tank1
     puts tank2
     puts tank3
@@ -100,16 +100,16 @@ while mapGen == false do
   map = a.gen
   world =  Array.new(10){ |y|
     Array.new(map.length){ |x|
-      map[x] < y ? 'â–ˆ' : ' '
+      map[x] < y ? 'œò¡È' : ' '
     }.join('')
   }
   for i in 0..156 do
-      if world[0][i] == "â–ˆ" then
+      if world[0][i] == "œò¡È" then
         mapGen = true
       end
   end
 end
-#puts world.join("\n").gsub("â–ˆ","â–ˆ".green)
+#puts world.join("\n").gsub("œò¡È","œò¡È".green)
 
 #create new randome map
 position = false
@@ -122,7 +122,7 @@ while position == false do
 end
 
 map_random = Array.new
-map_random = map_random.fill('|' + ' '*156 + '|',5..45).fill('|' + 'â–ˆ'*156+'|',3..4).fill('|' + '#'*156+'|',0..2).map{|e| e+''}
+map_random = map_random.fill('|' + ' '*156 + '|',5..45).fill('|' + 'œò¡È'*156+'|',3..4).fill('|' + '#'*156+'|',0..2).map{|e| e+''}
 for @i in 0...10 do
   for @z in 0...156 do
     map_random[44-(@i+4) - 27][@z+1] = world[@i][@z]
@@ -165,21 +165,21 @@ while p2_ylocation_test == false do
   end
   i = i - 1
 end
-player_1 = "â™›"
-player_2 = "â™•"
+player_1 = "œò£Û"
+player_2 = "œò£Õ"
 if xp1 > xp2 then
-  map_random[yp1+1][xp1-2] = "â†–"
-  map_random[yp2+1][xp2+2] = "â†—"
+  map_random[yp1+1][xp1-2] = "œôöö"
+  map_random[yp2+1][xp2+2] = "œôö÷"
 end
 if xp1 < xp2 then
-  map_random[yp1+1][xp1+2] = "â†—"
-  map_random[yp2+1][xp2-2] = "â†–"
+  map_random[yp1+1][xp1+2] = "œôö÷"
+  map_random[yp2+1][xp2-2] = "œôöö"
 end
 map_random[yp2][xp2] = player_2
 map_random[yp1][xp1] = player_1
 map_blank = Array.new
 map_blank = map_random.dup
-puts map_random.reverse.join("\n").gsub("â™›","â™›".cyan).gsub("â™•","â™•".red).gsub("#","#".brown).gsub("â–ˆ","â–ˆ".green)
+puts map_random.reverse.join("\n").gsub("œò£Û","œò£Û".cyan).gsub("œò£Õ","œò£Õ".red).gsub("#","#".brown).gsub("œò¡È","œò¡È".green)
 
 
 def draw_map(x, y, map_random, map_blank)
@@ -187,9 +187,9 @@ def draw_map(x, y, map_random, map_blank)
   if x < 0 then
     x = 156 + x
   end
-  # if x > 156 then
-  #   x = (x - 156)
-  # end
+  if x > 156 then
+    x = (x - 156)
+  end
   if x > 156 then
     x = (x - 156)
   end
@@ -197,8 +197,8 @@ def draw_map(x, y, map_random, map_blank)
     y = 44
   end
   part = map_random[y][x]
-  map_random[y][x] = "â˜£"
-  puts map_random.reverse.join("\n").gsub("â™›","â™›".cyan).gsub("â™•","â™•".red).gsub("#","#".brown).gsub("â–ˆ","â–ˆ".green)
+  map_random[y][x] = "
+  puts map_random.reverse.join("\n").gsub("œò£Û","œò£Û".cyan).gsub("œò£Õ","œò£Õ".red).gsub("#","#".brown).gsub("œò¡È","œò¡È".green)
   puts "#{x}, #{y}"
   if x > 158 then
     part = " "
@@ -228,7 +228,7 @@ end
 def get_angle(turn)
   good_angle = false
   while good_angle == false do
-    puts "angles(your options include but are not limited to): â† = 180, â†– = 135, â†‘ = 90, â†— = 45, â†’ = 0"
+    puts "angles(your options include but are not limited to): œôöğ = 180, œôöö = 135, œôöñ = 90, œôö÷ = 45, œôöò = 0"
     if turn == "1" then
       puts "Enter an angle player: #{turn}:".cyan
     end
@@ -265,10 +265,12 @@ while gameOver == false
   while particle_live == true do
     x = (velocity * time *Math.cos(angle.degrees))
     y = (velocity * time *Math.sin(angle.degrees) - 0.5*9.8*time*time)
+     #x%=156
     # if time < 0.6 and time > 0.0 then
     #   y = y + 5
      #end
     time = time + 0.02
+     #puts "#{x},#{y}"
     sleep(0.02)
     if turn == "1" then
       if xp1 < xp2 then
@@ -290,11 +292,6 @@ while gameOver == false
         x = (x + xp2 - 1).to_i
       end
     end
-
-    x%=156
-    puts "INSIDE LOOP: #{x},#{y}"
-
-
     if y == map_min[x] and time > 0.2 then
         particle_live = false
         if turn == "1" then
